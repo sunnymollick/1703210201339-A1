@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('add/employee','EmployeeController@addEmployee')->name('add-employee');
+Route::get('view/employee','EmployeeController@viewEmployee')->name('view-employee');
